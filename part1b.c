@@ -5,7 +5,7 @@
 #include <netinet/tcp.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include <pcap.h>  // Include the pcap.h library
+#include <pcap.h> 
 
 void process_packet(const struct pcap_pkthdr *header, const unsigned char *packet);
 
@@ -13,7 +13,7 @@ int main() {
     int flow_count;
     pcap_t *handle;
     char errbuf[PCAP_ERRBUF_SIZE];
-    const char *file_path = "1.pcap";  // Replace with the path to your pcap file
+    const char *file_path = "1.pcap";
 
     // Open the pcap file for reading
     handle = pcap_open_offline(file_path, errbuf);
